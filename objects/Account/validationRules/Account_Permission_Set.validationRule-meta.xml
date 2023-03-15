@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Permission_Set</fullName>
+    <active>true</active>
+    <description>This Validation Rule is Used to check account admin permissions.</description>
+    <errorConditionFormula>AND(NOT($Permission.Account_Admin),Active__c = true)</errorConditionFormula>
+    <errorMessage>You dont have Permission to Active Account.</errorMessage>
+</ValidationRule>
